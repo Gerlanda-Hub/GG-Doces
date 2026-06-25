@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2732" height="2732" viewBox="0 0 2732 2732">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8456b"/>
+      <stop offset="50%" style="stop-color:#d42853"/>
+      <stop offset="100%" style="stop-color:#d48a2a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Fundo -->
+  <rect width="2732" height="2732" fill="url(#bg)"/>
+  <rect width="2732" height="2732" fill="url(#glow)"/>
+  
+  <!-- Cupcake/Bolo -->
+  <g transform="translate(1366, 900)">
+    <!-- Forminha -->
+    <path d="M-240,120 L-200,-60 L200,-60 L240,120 Z" fill="#f5d6c6" stroke="#d4a992" stroke-width="10"/>
+    <line x1="-220" y1="80" x2="220" y2="80" stroke="#d4a992" stroke-width="6" opacity="0.4"/>
+    <line x1="-210" y1="40" x2="210" y2="40" stroke="#d4a992" stroke-width="6" opacity="0.4"/>
+    <line x1="-200" y1="0" x2="200" y2="0" stroke="#d4a992" stroke-width="6" opacity="0.4"/>
+    
+    <!-- Topo -->
+    <ellipse cx="0" cy="-80" rx="200" ry="50" fill="#f5d6c6"/>
+    <ellipse cx="0" cy="-100" rx="220" ry="70" fill="#ffffff"/>
+    
+    <!-- Cereja -->
+    <circle cx="-60" cy="-160" r="35" fill="#e8456b"/>
+    <path d="M-60,-195 Q-40,-220 -20,-200" fill="none" stroke="#2d5016" stroke-width="6"/>
+    
+    <!-- Chocolate -->
+    <circle cx="60" cy="-140" r="25" fill="#3d1c02"/>
+    <circle cx="100" cy="-120" r="20" fill="#3d1c02"/>
+    
+    <!-- Estrela -->
+    <polygon points="0,-180 10,-150 40,-150 15,-125 25,-95 0,-115 -25,-95 -15,-125 -40,-150 -10,-150" fill="#ffd700"/>
+  </g>
+  
+  <!-- GG Logo -->
+  <text x="1366" y="1250" text-anchor="middle" font-family="'Georgia', serif" font-size="300" font-weight="bold" fill="#ffffff" fill-opacity="0.95">GG</text>
+  
+  <!-- Nome da Marca -->
+  <text x="1366" y="1520" text-anchor="middle" font-family="'Inter', 'Segoe UI', sans-serif" font-size="110" font-weight="600" fill="#ffffff" fill-opacity="0.9">Mundo de Doces</text>
+  <text x="1366" y="1640" text-anchor="middle" font-family="'Inter', 'Segoe UI', sans-serif" font-size="60" font-weight="400" fill="#ffffff" fill-opacity="0.6">Sabores criados para cada celebração</text>
+  
+  <!-- Brilhos decorativos -->
+  <circle cx="400" cy="500" r="20" fill="#ffffff" opacity="0.4"/>
+  <circle cx="2300" cy="600" r="15" fill="#ffffff" opacity="0.3"/>
+  <circle cx="500" cy="2000" r="18" fill="#ffffff" opacity="0.3"/>
+  <circle cx="2200" cy="2100" r="22" fill="#ffffff" opacity="0.35"/>
+  <circle cx="300" cy="1200" r="12" fill="#ffffff" opacity="0.5"/>
+  <circle cx="2400" cy="1400" r="14" fill="#ffffff" opacity="0.4"/>
+</svg>

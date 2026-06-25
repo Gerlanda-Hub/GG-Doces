@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8456b"/>
+      <stop offset="100%" style="stop-color:#d48a2a"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo circular -->
+  <circle cx="512" cy="512" r="500" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="500" fill="url(#shine)"/>
+  
+  <!-- Borda decorativa -->
+  <circle cx="512" cy="512" r="470" fill="none" stroke="#ffffff" stroke-width="8" stroke-opacity="0.3"/>
+  <circle cx="512" cy="512" r="450" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.15"/>
+  
+  <!-- Cupcake/Bolo Emoji-style -->
+  <g transform="translate(512, 480)">
+    <!-- Base do cupcake (wrapper) -->
+    <path d="M-120,60 L-100,-30 L100,-30 L120,60 Z" fill="#f5d6c6" stroke="#d4a992" stroke-width="6"/>
+    
+    <!-- Linhas da forminha -->
+    <line x1="-110" y1="40" x2="110" y2="40" stroke="#d4a992" stroke-width="3" opacity="0.5"/>
+    <line x1="-105" y1="20" x2="105" y2="20" stroke="#d4a992" stroke-width="3" opacity="0.5"/>
+    <line x1="-102" y1="0" x2="102" y2="0" stroke="#d4a992" stroke-width="3" opacity="0.5"/>
+    
+    <!-- Topo do bolo -->
+    <ellipse cx="0" cy="-40" rx="100" ry="25" fill="#f5d6c6"/>
+    
+    <!-- Creme/cobertura -->
+    <ellipse cx="0" cy="-50" rx="110" ry="35" fill="#ffffff"/>
+    
+    <!-- Cereja -->
+    <circle cx="-30" cy="-80" r="18" fill="#e8456b"/>
+    <path d="M-30,-98 Q-20,-110 -10,-100" fill="none" stroke="#2d5016" stroke-width="3"/>
+    
+    <!-- Chocolate derretido -->
+    <circle cx="30" cy="-70" r="12" fill="#3d1c02"/>
+    <circle cx="50" cy="-60" r="8" fill="#3d1c02"/>
+    
+    <!-- Estrela decorativa -->
+    <polygon points="0,-90 5,-75 20,-75 8,-63 12,-48 0,-58 -12,-48 -8,-63 -20,-75 -5,-75" fill="#ffd700"/>
+  </g>
+  
+  <!-- GG - Iniciais da marca -->
+  <text x="512" y="720" text-anchor="middle" font-family="'Georgia', serif" font-size="130" font-weight="bold" fill="#ffffff" fill-opacity="0.9">GG</text>
+  
+  <!-- Brilhos -->
+  <circle cx="180" cy="200" r="8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="820" cy="280" r="6" fill="#ffffff" opacity="0.5"/>
+  <circle cx="200" cy="750" r="5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="800" cy="700" r="7" fill="#ffffff" opacity="0.5"/>
+  <circle cx="300" cy="180" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="750" cy="180" r="5" fill="#ffffff" opacity="0.6"/>
+</svg>

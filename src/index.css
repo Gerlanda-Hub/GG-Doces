@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-rosa-50: #fdf2f4;
+  --color-rosa-100: #fce4e9;
+  --color-rosa-200: #f8c8d4;
+  --color-rosa-300: #f49db3;
+  --color-rosa-400: #ed6c8d;
+  --color-rosa-500: #e8456b;
+  --color-rosa-600: #d42853;
+  --color-rosa-700: #b31c41;
+  --color-rosa-800: #961a3b;
+  --color-rosa-900: #7d1a37;
+
+  --color-dourado-50: #fdf8f0;
+  --color-dourado-100: #f9edd8;
+  --color-dourado-200: #f3d8b0;
+  --color-dourado-300: #ebbe7e;
+  --color-dourado-400: #e2a04a;
+  --color-dourado-500: #d48a2a;
+  --color-dourado-600: #b9701f;
+  --color-dourado-700: #9a581c;
+  --color-dourado-800: #7d471d;
+  --color-dourado-900: #693c1d;
+
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 🌞 TEMA CLARO (default) */
+  body {
+    font-family: var(--font-sans);
+    color: #3d2e2e;
+    background: #fefdfb;
+  }
+
+  /* 🌑 TEMA ESCURO ESTILO WHATSAPP */
+  .dark body {
+    color: #e9edef;
+    background: #0b141a;
+  }
+
+  /* Fundos de cartões e secções no tema escuro */
+  .dark .bg-white { background-color: #1f2c33; }
+  .dark .bg-gray-50 { background-color: #0b141a; }
+  .dark .bg-gray-100 { background-color: #1f2c33; }
+  .dark .bg-rosa-50 { background-color: #182229; }
+  .dark .bg-rosa-50\/20 { background-color: rgba(24, 34, 41, 0.8); }
+  .dark .bg-rosa-50\/30 { background-color: rgba(24, 34, 41, 0.9); }
+  .dark .bg-rosa-50\/50 { background-color: rgba(24, 34, 41, 0.95); }
+
+  /* Bordas escuras */
+  .dark .border-gray-100 { border-color: #2a3841; }
+  .dark .border-gray-200 { border-color: #2a3841; }
+  .dark .border-gray-50 { border-color: #2a3841; }
+  .dark .border-rosa-100 { border-color: #2a3841; }
+  .dark .border-rosa-200 { border-color: #3a4851; }
+  .dark .border-dourado-100 { border-color: #2a3841; }
+
+  /* Texto escuro (legível como WhatsApp) */
+  .dark .text-gray-900 { color: #e9edef; }
+  .dark .text-gray-800 { color: #d1d7db; }
+  .dark .text-gray-700 { color: #aebac1; }
+  .dark .text-gray-600 { color: #8696a0; }
+  .dark .text-gray-500 { color: #667781; }
+  .dark .text-gray-400 { color: #667781; }
+  .dark .text-gray-300 { color: #8696a0; }
+  .dark .text-gray-950 { color: #e9edef; }
+  .dark .text-gray-850 { color: #d1d7db; }
+
+  /* Fundos de inputs no escuro */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    background-color: #1f2c33;
+    color: #e9edef;
+    border-color: #2a3841;
+  }
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: #667781;
+  }
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    border-color: #e8456b;
+    --tw-ring-color: rgba(232, 69, 107, 0.2);
+  }
+
+  /* Fundos de secções alternadas */
+  .dark .from-rosa-50 { --tw-gradient-from: #0b141a; }
+  .dark .via-white { --tw-gradient-stops: #0b141a, #1f2c33; }
+  .dark .to-white { --tw-gradient-to: #1f2c33; }
+  .dark .to-dourado-50 { --tw-gradient-to: #1f2c33; }
+  .dark .from-rosa-50\/50 { --tw-gradient-from: rgba(11, 20, 26, 0.95); }
+  .dark .from-rosa-50\/40 { --tw-gradient-from: rgba(11, 20, 26, 0.9); }
+
+  /* Rosa mantém-se vibrante para botões e destaques */
+  .dark .text-rosa-600 { color: #f49db3; }
+  .dark .text-rosa-500 { color: #ed6c8d; }
+  .dark .bg-rosa-500 { background-color: #e8456b; }
+  .dark .bg-rosa-50\/20 { background-color: rgba(232, 69, 107, 0.1); }
+  .dark .hover\:bg-rosa-50:hover { background-color: rgba(232, 69, 107, 0.1); }
+  .dark .hover\:bg-rosa-100:hover { background-color: rgba(232, 69, 107, 0.15); }
+
+  /* Dourado no escuro */
+  .dark .text-dourado-500 { color: #e2a04a; }
+  .dark .text-dourado-600 { color: #ebbe7e; }
+  .dark .text-dourado-700 { color: #f3d8b0; }
+  .dark .bg-dourado-50 { background-color: rgba(226, 160, 74, 0.08); }
+}
+
+@layer utilities {
+  .text-gradient-rosa {
+    background: linear-gradient(135deg, #e8456b, #d48a2a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .dark .text-gradient-rosa {
+    background: linear-gradient(135deg, #f49db3, #ebbe7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.7s ease forwards; }
+.animate-fade-in { animation: fadeIn 0.5s ease forwards; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #fdf2f4; }
+::-webkit-scrollbar-thumb { background: #f49db3; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #e8456b; }
+.dark ::-webkit-scrollbar-track { background: #1f2c33; }
+.dark ::-webkit-scrollbar-thumb { background: #2a3841; }
+
+.zoom-modal {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.85); cursor: zoom-out;
+}
+.zoom-modal img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; }
