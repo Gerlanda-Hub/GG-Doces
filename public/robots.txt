@@ -1,0 +1,23 @@
+# ============================================
+# robots.txt — Mundo de Doces da GG
+# Controla o rastreamento dos motores de busca
+# ============================================
+
+# Permitir todos os rastreadores
+User-agent: *
+
+
+# Páginas que DEVEM ser indexadas (opcional — já são permitidas por padrão)
+Allow: /
+Allow: /encomendar
+Allow: /consultar
+Allow: /contato
+Allow: /sobre
+Allow: /politica-privacidade
+Allow: /admin
+Allow: /admin/painel
+Allow: /cliente
+Allow: /cliente/painel
+
+# Sitemap (opcional — se tiveres um)
+Sitemap: https://gg-doces.vercel.app/sitemap.xml
